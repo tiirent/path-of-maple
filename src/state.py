@@ -1,0 +1,12 @@
+class State:
+    EMPTY = ""
+    RIGHT = "right"
+    LEFT = "left"
+    JUMP = "jump"
+    STAND = "stand1"
+    WALK = "walk"
+    WALK_1 = "walk1"
+    GET_ON_ROPE = "get_on_rope"
+    UP_ROPE = "up_rope"
+    SWEEP_LEFT = "sweep_left"
+    SWEEP_RIGHT = "sweep_right"
