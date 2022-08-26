@@ -36,13 +36,17 @@ class Entity(pygame.sprite.Sprite):
         self.direction = True
         self.grounded = False
 
-        self.loadImages()
+        try:
+            self.loadImages()
 
-        self.state = states[0]
-        self.images = self.imgDict[self.state]
+            self.state = states[0]
+            self.images = self.imgDict[self.state]
 
-        self.surf = self.images[self.index]
-        self.rect = self.surf.get_rect()
+            self.surf = self.images[self.index]
+            self.rect = self.surf.get_rect()
+        except:
+            pass
+            # print("unable to fetch assets")
 
     def loadImages(self):
         self.imgDict = {}
